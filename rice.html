@@ -1,0 +1,99 @@
+<html>
+    <body style:"background-color:powderblue"></body>
+    </body><h1 style="color:red;">Raw Rice Prediction Using Machine Learning</h1>
+    <form method="POST">
+        {% csrf_token %}
+        <table>
+            <tr>
+                <td>
+                    Area
+                </td>
+                <td>
+                    <input type="text" name="textarea">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MajorAxisLength
+                </td>
+                <td>
+                    <input type="text" name="textmajoraxislength">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    MinorAxisLength
+                </td>
+                <td>
+                    <input type="text" name="textminoraxislength">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Eccentricity
+                </td>
+                <td>
+                    <input type="text" name="texteccentricity">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    ConvexArea
+                </td>
+                <td>
+                    <input type="text" name="textconvexarea">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    EquivDiameter
+                </td>
+                <td>
+                    <input type="text" name="textequivdiameter">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Extent
+                </td>
+                <td>
+                    <input type="text" name="textextent">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Perimeter
+                </td>
+                <td>
+                    <input type="text" name="textperimeter">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Roundness
+                </td>
+                <td>
+                    <input type="text" name="textroundness">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    AspectRation
+                </td>
+                <td>
+                    <input type="text" name="textaspectration">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button type="submit" class="btn btn-primary" name="buttonpredict">Predict</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    {{result}}
+                </td>
+            </tr>
+        </table>
+    </form>
+</html>
